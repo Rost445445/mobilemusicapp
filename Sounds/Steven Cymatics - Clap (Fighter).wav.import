@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bjltdpnq3aoq8"
+path="res://.godot/imported/Steven Cymatics - Clap (Fighter).wav-74da8e23c0ab5dae489dd5211029c1d2.sample"
+
+[deps]
+
+source_file="res://Sounds/Steven Cymatics - Clap (Fighter).wav"
+dest_files=["res://.godot/imported/Steven Cymatics - Clap (Fighter).wav-74da8e23c0ab5dae489dd5211029c1d2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

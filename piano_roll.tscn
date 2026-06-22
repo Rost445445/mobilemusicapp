@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://c32vfbe1psen5"]
+
+[ext_resource type="Script" path="res://piano_roll.gd" id="1_e80v8"]
+[ext_resource type="AudioStream" uid="uid://dm0j1vakk1cfb" path="res://Sounds/Piano.wav" id="2_yfm6x"]
+
+[node name="PianoRoll" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e80v8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.483847, 0.486624, 0.659034, 1)
+
+[node name="NotePlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_yfm6x")
+playback_type = 1
+
+[node name="CloseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -139.0
+offset_top = -7.0
+offset_right = -59.0
+offset_bottom = 56.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
+text = "✕"
+
+[node name="NoteGrid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 60.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 17
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

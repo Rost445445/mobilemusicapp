@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dlooqeuf6l0mm"
+path="res://.godot/imported/Steven Cymatics - Clap (Paper).wav-8c2e730cad5e739e51f197e3c8b2a6f4.sample"
+
+[deps]
+
+source_file="res://Sounds/Steven Cymatics - Clap (Paper).wav"
+dest_files=["res://.godot/imported/Steven Cymatics - Clap (Paper).wav-8c2e730cad5e739e51f197e3c8b2a6f4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

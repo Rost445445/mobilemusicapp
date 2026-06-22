@@ -1,0 +1,24 @@
+[gd_resource type="AudioBusLayout" load_steps=5 format=3 uid="uid://brhn8mpifrf1q"]
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_ygipe"]
+resource_name = "Delay"
+
+[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_qkf0x"]
+resource_name = "Chorus"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_lb5pu"]
+resource_name = "Reverb"
+
+[sub_resource type="AudioEffectLimiter" id="AudioEffectLimiter_0tdyq"]
+resource_name = "Limiter"
+
+[resource]
+bus/0/volume_db = -6.57885
+bus/0/effect/0/effect = SubResource("AudioEffectDelay_ygipe")
+bus/0/effect/0/enabled = false
+bus/0/effect/1/effect = SubResource("AudioEffectChorus_qkf0x")
+bus/0/effect/1/enabled = false
+bus/0/effect/2/effect = SubResource("AudioEffectReverb_lb5pu")
+bus/0/effect/2/enabled = false
+bus/0/effect/3/effect = SubResource("AudioEffectLimiter_0tdyq")
+bus/0/effect/3/enabled = true
